@@ -27,7 +27,6 @@ function jogar()
     
      var radomComp  =Math.floor(Math.random() * 3) + 1;
      
-	 animateImg();
 
    randomimg(radomComp);
 
@@ -77,30 +76,30 @@ for( i=0; i< childDivs.length; i++ )
 	
 }
 
-function animateImg()
-{
-	var childDivs = document.getElementById('com').getElementsByTagName('img');
+// function animateImg()
+// {
+// 	var childDivs = document.getElementById('com').getElementsByTagName('img');
 
-	var cont = childDivs.length;
+// 	var cont = childDivs.length;
 	
 	
-		var intervalo = setInterval(setImage(childDivs[cont - 1].src),1000);
+// 		var intervalo = setInterval(setImage(childDivs[cont - 1].src),1000);
 	
 	
 	
-	function setImage(cominhoimg)
-	{
-		if(cont >= 0)
-		{
-			cont --;
-			document.getElementById("escComp").src =cominhoimg ;
-		}else
-		{
-			clearInterval(intervalo);
-		}
+// 	function setImage(cominhoimg)
+// 	{
+// 		if(cont >= 0)
+// 		{
+// 			cont --;
+// 			document.getElementById("escComp").src =cominhoimg ;
+// 		}else
+// 		{
+// 			clearInterval(intervalo);
+// 		}
 
-	}
-}
+// 	}
+// }
 
 
 
