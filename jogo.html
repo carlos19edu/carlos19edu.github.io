@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Jogo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="estilo.css">
+   <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+
+<div class="container-fluid  bg-2 text-center main ">
+ 
+ 
+ <div id="player" class="col-md-3 jogo  panel panel-default panel-body">
+          <h2>Voce</h2>
+          <br>
+
+          <a href="#">
+            <img src="img/pedra.png"  data-tipo="1">
+          </a> 
+          <br>
+
+           <a href="#">
+            <img src="img/papel.png" data-tipo="2">
+          </a>
+            <br>
+
+           <a href="#">
+            <img src="img/tesoura.png" data-tipo="3">
+          </a>
+          </div>
+ <div class="col-md-6 panel panel-primary panel-body">
+
+    
+          <h1>Placar</h1>
+          <div>
+             <h2><span id="pP">0</span> x <span id="pC">0</span></h2>
+          </div>
+
+           <div class="col-md-6">
+                <img id="escPlayer" src="img/pedra.png" data-tipo="1">
+
+             </div>
+               <div class="col-md-6">
+                  <img id="escComp" src="img/papel2.png">
+             </div>
+
+             <div class="col-md-12" style="margin-top: 51px">
+              <h3 id="resultado"></h3>
+             </div>
+  </div>
+
+ <div id="com" class="col-md-3 jogo panel panel-default panel-body">
+             <h2>Computador</h2>
+              <br>
+          <a href="#">
+            <img src="img/pedra2.png"  data-tipo="1" >
+          </a> 
+          <br>
+
+           <a href="#">
+            <img src="img/papel2.png"  data-tipo="2">
+          </a>
+            <br>
+
+           <a href="#">
+            <img src="img/tesoura2.png"  data-tipo="3">
+          </a>
+</div>
+   
+ <div class="footer" ><button onclick="jogar()"  class="btn btn-default btn-circle btn-xl black"><i class="glyphicon glyphicon-play"></i> </button>
+</div>
+</div>
+
+</body>
+</html>
