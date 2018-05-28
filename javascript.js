@@ -15,6 +15,8 @@ function escolher(el)
 	escolha.src =el.target.src;
 	escolha.dataset.tipo = el.target.dataset.tipo;
 
+	jogar();
+
 
 }
 
@@ -25,6 +27,7 @@ function jogar()
     
      var radomComp  =Math.floor(Math.random() * 3) + 1;
      
+	 animateImg();
 
    randomimg(radomComp);
 
@@ -70,9 +73,34 @@ for( i=0; i< childDivs.length; i++ )
 	 {
        document.getElementById("escComp").src =childDivs[i].src ;
 	 }
-
-}  
-
-
+}
 	
 }
+
+function animateImg()
+{
+	var childDivs = document.getElementById('com').getElementsByTagName('img');
+
+	var cont = childDivs.length;
+	
+	
+		var intervalo = setInterval(setImage(childDivs[cont - 1].src),1000);
+	
+	
+	
+	function setImage(cominhoimg)
+	{
+		if(cont >= 0)
+		{
+			cont --;
+			document.getElementById("escComp").src =cominhoimg ;
+		}else
+		{
+			clearInterval(intervalo);
+		}
+
+	}
+}
+
+
+
