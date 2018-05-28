@@ -42,7 +42,7 @@ function jogar()
 	else
 	{
 
-	if(( player == 2 && radomComp == 1 ) || (player == 1 && radomComp == 3 )|| (player == 3 && radomComp == 1 ))
+	if(( player == 2 && radomComp == 1 ) || (player == 1 && radomComp == 3 )|| (player == 3 && radomComp == 2 ))
 	{
        resultado = "Venceu";
        pontosPlayer.innerHTML = parseInt(pontosPlayer.innerHTML) + 1 ;
