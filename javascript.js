@@ -11,12 +11,14 @@ function initPage ()
 
 function escolher(el)
 {
-	var escolha = document.getElementById("escPlayer");
-	escolha.src =el.target.src;
-	escolha.dataset.tipo = el.target.dataset.tipo;
+	if(el.target.tagName == "IMG")
+	   {
+		var escolha = document.getElementById("escPlayer");
+		escolha.src =el.target.src;
+		escolha.dataset.tipo = el.target.dataset.tipo;
 
-	jogar();
-
+		jogar();
+           }
 
 }
 
