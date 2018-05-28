@@ -1,2 +1,2 @@
-# carlos19edu.github.io
+# http://carlos19edu.github.io
 Jogo de pedra papel tesoura
