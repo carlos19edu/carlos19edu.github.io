@@ -30,7 +30,7 @@ function jogar()
 
    randomimg(radomComp);
 
-     var player  = escolha.dataset.tipo;
+     var player  = parseInt(escolha.dataset.tipo);
 
        var pontosPlayer = document.getElementById("pP");
        var pontosComp = document.getElementById("pC");
@@ -42,7 +42,7 @@ function jogar()
 	else
 	{
 
-	if((player == 2 && radomComp == 1 ) || (player == 1 && radomComp == 3 )|| (player == 3 && radomComp == 1 ))
+	if(( player == 2 && radomComp == 1 ) || (player == 1 && radomComp == 3 )|| (player == 3 && radomComp == 1 ))
 	{
        resultado = "Venceu";
        pontosPlayer.innerHTML = parseInt(pontosPlayer.innerHTML) + 1 ;
@@ -68,7 +68,7 @@ function randomimg(randnum)
 
 for( i=0; i< childDivs.length; i++ )
 {
-	 if (childDivs[i].dataset.tipo == randnum )
+	 if (parseInt( childDivs[i].dataset.tipo) == randnum )
 	 {
        document.getElementById("escComp").src =childDivs[i].src ;
 	 }
